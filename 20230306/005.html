@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        section{
+            margin-top: 20px;
+        }
+        div{
+            background: rosybrown;
+        }
+
+        div~div {
+            margin-top: 10px
+        }
+
+        span {
+            background: salmon;
+        }
+
+        .b div{
+            display: inline;
+        }
+        .b span{
+            display: block;
+        }
+
+        .c span{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="a">
+        <div>블록</div>
+        <div>블록</div>
+        <div>블록</div>
+
+        <span>인라인</span>
+        <span>인라인</span>
+        <span>인라인</span>
+    </section>
+
+    <section class="b">
+        <div>블록</div>
+        <div>블록</div>
+        <div>블록</div>
+
+        <span>인라인</span>
+        <span>인라인</span>
+        <span>인라인</span>
+    </sectionc>
+    
+    <section class="c">
+        <div>블록</div>
+        <div>블록</div>
+        <div>블록</div>
+
+        <span>인라인</span>
+        <span>인라인</span>
+        <span>인라인</span>
+    </section>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 적용</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+        @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("font/Pretendard-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: italic;
+        }
+
+        @font-face {
+        font-family: "Pretendard-Bold";
+        src: url("font/Pretendard-Bold.woff") format("woff");
+        font-weight: 400;
+        font-style:normal;
+        }
+
+        .dongle {
+            font-family: 'Dongle', sans-serif;
+            font-size: 30px;
+        }
+
+        .gugi {
+            font-family: 'Gugi';
+        }
+
+        
+        .pt-r{
+            font-family: Pretendard-Regular, "Times New Roman", Dotum, "돋움", sans-serif;   
+        }
+
+        .pt-b{
+            font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
+            font-weight: 700;
+            font-size:1.6rem;
+            text-shadow: 1px 1px 0 skyblue;
+            text-align: justify;
+            word-break: break-all;
+            line-height: 1.6em;
+            /* letter-spacing: 20px; */
+            word-spacing: 20px;
+            text-indent: 1em;
+        }
+        .va {
+            font-size: 10rem;
+
+        }
+        .va strong{
+            font-size: 0.5em;
+            vertical-align:top;
+        }
+        .box {
+            background: salmon;
+            width: 100px;
+            height: 100px;
+            /* 중앙정렬 가능 , 사용 자제*/
+            line-height: 100px; 
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        안녕
+    </div>
+
+    <p class="pt-r">안녕</p>
+    <p class="va">안녕 <strong>하이</strong></p>
+    <p class="pt-b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium consectetur velit quam veritatis suscipit corrupti? Dolorum nulla eos illum nam in quis unde optio inventore nemo, fuga modi saepe?
+    Nihil ullam debitis vitae delectus eius quod! Error illum placeat asperiores eos! Recusandae molestiae nisi dolor labore quaerat dolore sunt aperiam maxime dolorem? Molestiae eveniet sequi eos, nesciunt minima quibusdam?
+    Natus placeat cupiditate tempora quos dignissimos, nihil doloremque, quibusdam neque illum magnam quasi, atque quo porro. Illo eligendi saepe suscipit, possimus sapiente iure repellat magni quos vel aperiam, voluptates animi!
+    Nihil eos consequuntur veniam ullam doloribus. Eveniet reprehenderit eius blanditiis mollitia sint esse quaerat distinctio a nobis. Soluta maxime doloribus ea possimus corporis inventore autem fugiat aut iure, officia at.</p>
+    <p class="dongle">안녕</p>
+    <p style="font-family:'Times New Roman', Times, serif">hi</p>
+    <p class="gugi">안녕</p>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+.Frame {
+    position:relative;
+    width: 740px;
+    height: 447px;
+    background: #F5F5F5;
+}
+.post-card1{
+    position:absolute;
+    width: 288px;
+    /* height: 348px; */
+    left: 63px;
+    top: 46px;
+
+    background: #FFFFFF;
+    /* 00 */
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.post-card1 img{
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.card-text {
+    padding: 24px 16px 16px;
+}
+
+.card-text h2 {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text .title + p{
+    font-size: 12px;
+    color : #5a6a72;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 6px;
+}

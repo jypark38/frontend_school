@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wrap {
+            background: yellow;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .thumbnail {
+            position: relative;
+            height: 0px;
+            padding-top: 50%;
+            overflow: hidden;
+        }
+
+        .thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div>안녕</div>
+    <img src="asdfmsdf.jpg" alt="ㅁㅁ">
+    <p>프론트엔드개발</p>
+    
+    <!-- 이미지가 인라인요소라서 img의 세로 정렬이 글자의 baseline을 따르게 됩니다. -->
+    <div class=""wrap>
+        <img src="img/asdf.jpg" alt="위니브 캐릭터 칠리">
+    </div >
+
+    <div class="thumbnail">
+        <img src="https://github.com/stronger-deer/myBlog/blob/main/img/main-visual.jpg?raw=true"
+            alt="한 성인이 스케이트보드를 타고 있다" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스</title>
+    <style>
+        :root{
+            --main-color: pink;
+            --pane-padding: 5px 42px;
+        }
+
+        body{
+            background: var(--main-color);
+        }
+        li:first-child{
+            color: salmon;
+        }
+
+        li:last-child{
+            color:sandybrown;
+        }
+
+        li:nth-child(3){
+            color: royalblue;
+        }
+        /* li:nth-child(2n+1) */
+        li:nth-child(odd){
+            text-decoration: underline;
+        }
+
+        /* li:nth-child(2n) */
+        li:nth-child(even){
+            text-decoration: line-through rosybrown;
+        }
+
+
+        p:nth-of-type(3){
+            color: royalblue;
+        }
+
+        /* div의 세번째 자식요소 */
+        div :nth-child(3){
+            text-decoration: underline;
+        }
+
+        /* p 형제요소중 세번쨰 요소가 p일떄 */
+        /* 세번째가 p가 아니라서 변화 없음 */
+        p:nth-child(3){
+            text-decoration: underline;
+        }
+        /* 형제중에 div가 유일한 div 선택 */
+        div:only-of-type {
+            border: 3px solid sandybrown;
+        }
+        li:not(:first-child){
+            background: #eee;
+            margin-top: 20px
+        }
+        li:not(.red){
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="red">첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li class="red">네번째</li>
+        <li>다섯번째</li>
+        <li>여섯번째</li>
+        <li>일곱번째</li>
+        <li>여덟번째</li>
+        <li>아홉번째</li>
+        <li>열번째</li>
+    </ul>
+
+    <div>
+        <p>첫번째</p>
+        <p>두번째</p>
+        <strong>세번째</strong>
+        <p>네번째</p>
+        <div>다섯번째</div>
+        <p>여섯번째</p>
+        <p>일곱번째</p>
+        <p>여덟번째</p>
+        <p>아홉번째</p>
+        <p>열번째</p>
+    </div>
+</body>
+</html>

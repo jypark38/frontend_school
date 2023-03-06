@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card UI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .total-wrap{
+            position: relative;
+            width: 740px;
+            height: 447px;
+
+            background: #F5F5F5;
+        }
+        .wrap {
+            width: 288px;
+            height: 348px;
+            background: white;
+            position: absolute;
+            left: 63px;
+            top: 46px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+        .wrap img {
+            position: absolute;
+            width: 288px;
+            height: 196px;
+            bottom: 152px;
+        }
+        .title {
+            position : absolute;
+            top: 221px;
+            left: 16px;
+            bottom: 108px;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            color: #29363D;
+        }
+        .content{
+            position: absolute;
+            top: 252px;
+            left: 16px;
+            font-size: 12px;
+            color: #5A6A72;
+            width: 256px;
+            height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-clamp: 2;
+        }
+        .read {
+            position: absolute;
+            top: 311px;
+            left: 25px;
+            bottom: 19px;
+
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .wrap2 {
+            position: absolute;
+            width: 288px;
+            height: 374px;
+            left: 378px;
+            top: 46px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+        
+        .frame1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+
+            position: absolute;
+            width: 256px;
+            height: 40px;
+            left: 16px;
+            top: 16px;
+        }
+        
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class = 'total-wrap'>
+        <div class="wrap">
+            <img src="./img/img.jpeg" alt="">
+            <p class="title">그것은 피가 청춘을 것이다.</p>
+            <p class="content">청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을 용기가 충분히 청춘 것이다. 얼마나 반짝이는 소담스...운 열락의 아름다우냐? 가지에 같지 청춘의 옷을 목숨을 피어나기 오직 군영과 칼이다. 거친 끓는 예가 뿐이다. 방지하는 꽃이 청춘을 생명을 이것이다. 인간의 거선의 피고, 모래뿐일 작고 우리 평화스러운 있는가?</p>
+            <p class="read">Read</p>
+        </div>
+
+        <div class="wrap2">
+            <div class="frame1">
+                <img class="profile" src="./img/pepe.jpeg" alt="">
+                <div class="group1">
+                    
+                </div>
+            </div>
+            <div ></div>
+        </div>
+    </div>
+</body>
+</html>
