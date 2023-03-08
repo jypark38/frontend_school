@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 강사 풀이</title>
+    <style>
+        .container-box{
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 2fr 1fr 2fr;
+            gap:10px;
+            grid-template-areas: 
+            /* /* 강사 깃 확인 */
+                "a a b"
+                "c d b"
+                "e f f"  ;
+            width: 500px;
+            height: 500px;
+        }
+
+        .blue{
+            background: skyblue;
+            grid-area: a;
+        }
+        .yellow{
+            background: gold;
+            grid-area: b;
+        }
+        .purple{
+            background: plum;
+            grid-area: c;
+        }
+        .orange{
+            background: orange;
+            grid-area: d;
+        }
+        .pink{
+            background: pink;
+            grid-area: e;
+        }
+        .green{
+            background: green;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-box">
+        <div class="blue">1</div>
+        <div class="yellow">2</div>
+        <div class="purple">3</div>
+        <div class="orange">4</div>
+        <div class="pink">5</div>
+        <div class="green">6</div>
+    </div>
+</body>
+</html>

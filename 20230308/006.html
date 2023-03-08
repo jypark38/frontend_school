@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout만들기</title>
+    <style>
+        header{
+            background: skyblue;
+            flex-grow: 1;
+        }
+        section{
+            background: royalblue;
+        }
+        aside {
+            background: salmon;
+        }
+        footer{
+            background: gold;
+            flex-grow: 1;
+        }
+        
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: 400px;
+            justify-content: space-between;
+
+            background: #ccc;
+            padding: 5px;
+
+            text-align: center;
+        }
+
+        .wrap2 {
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+            flex-grow: 3;
+        }
+
+        .wrap2 section {
+            flex-grow: 1;
+        }
+        .wrap2 aside {
+            width: 30%;
+        }
+
+        /* .wrap2 > * {
+            flex-grow: 1;
+        } */
+
+        header, section, aside, footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 18px;
+            font-weight: bold;
+            color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>header</header>
+        <div class="wrap2">
+            <section>section</section>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
