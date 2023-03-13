@@ -14,12 +14,15 @@ body {
     background: salmon;
 }
 
+
 .login {
     border: 1px solid #DBDBDB;
     border-radius: 5px;
     background: #ffffff;
     font-size: 12px;
     padding: 18px 16px;
+    width: 350px;
+    margin: auto;
 }
 
 .btn-login {
