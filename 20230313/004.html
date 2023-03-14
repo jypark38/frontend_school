@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .licat {
+            width: 168px;
+            height: 200px;
+            /* 백그라운드 속성 */
+            /* https://designer-ej.tistory.com/entry/CSS-background-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%ACcolor-image-position-repeat-%EB%93%B1 */
+            background: url(./keyframes-licat.png) no-repeat 0 0 / auto 100%;
+            /* 0 0 position */
+            /* auto 100% size */
+
+            animation: move-licat 0.8s infinite steps(6)
+        }
+
+        @keyframes move-licat {
+            to{
+                background-position: right 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="licat"></div>
+</body>
+</html>

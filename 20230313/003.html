@@ -1,0 +1,130 @@
+<!-- transition: css에서 속성 값의 변화가  일정 시간에 걸쳐 일어나도록 하는 것-->
+
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[해보기] 버튼만들기</title>
+    <style>
+
+        p {
+            padding: initial;
+            margin: initial;
+        }
+        div {
+            /* box-shadow: inset 0 0 20px ; */
+            padding: 12px;
+            display: grid;
+            grid-template-columns: 0.5fr repeat(4,1fr);
+        }
+
+        p {
+            /* box-shadow: inset 0 0 20px lime; */
+            font-weight: 700;
+            font-size: 10px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        div > p {
+            text-align: left;
+        }
+
+        button {
+            width: 88px;
+            background: #343F50;
+
+            font-weight: 700;
+            font-size: 12px;
+            
+            border: 1px solid #1A202C;
+            box-shadow: inset 1px 1px #4A5568;
+            cursor:pointer;
+        }
+        
+
+        .btn {
+            color: white;
+        }
+        
+
+        [class^="btn"]:hover,
+        [class^="btn"]:active {
+            text-decoration: underline;
+            color: white;
+            transition: color 3s, background-color 10s;
+        }
+
+        .btn:active{
+            box-shadow: inset 1px 1px #262F3E;
+        }
+
+        [class*="yes"] {
+            color: #439AFF;
+        }
+        [class*="yes"]:hover, 
+        [class*="yes"]:active{
+            background-color:  #439AFF;;
+            border: 1px solid #439AFF;
+        }
+        [class*="yes"]:hover{
+            box-shadow: inset 1px 1px #73B4FF;
+        }
+        [class*="yes"]:active{
+            box-shadow: inset 1px 1px #3B78BE;
+        }
+
+        [class*="del"] {
+            color: #EB5757;
+        }
+        [class*="del"]:hover,
+        [class*="del"]:active{
+            background-color:  #EB5757;;
+            border: 1px solid #EB5757;
+        }
+        [class*="del"]:hover{
+            box-shadow: inset 1px 1px #FD6F6F;
+        }
+        [class*="del"]:active{
+            box-shadow: inset 1px 1px #D94242;
+        }
+
+        .btn:disabled {
+            box-shadow: none;
+            text-decoration: none;
+            color: #4A5568;
+        }
+    </style>
+</head>
+<body>
+    <div class="default">
+        <p>버튼</p>
+        <button class="btn">Button</button>
+        <button class="btn-yes">Yes</button>
+        <button class="btn-del">Del</button>
+        <button disabled>button</button>
+    </div>
+    
+    <!-- <div>
+        <p>hover</p>
+        <button class="normal">Button</button>
+        <button class="yes">Yes</button>
+        <button class="del">Del</button>    
+    </div>
+
+    <div>
+        <p>active</p>
+        <button class="normal">Button</button>
+        <button class="yes">Yes</button>
+        <button class="del">Del</button>
+    </div> -->
+<!-- 
+    <div>
+        <p>disabled</p>
+
+    </div> -->
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        /* 마우스 커서를 요소에 올려두었을 때 */
+        button:hover {
+            background-color: royalblue;
+        }
+
+        /* 클릭시 활성화(누르고 있는 동안) */
+        button:active {
+            background-color: salmon;
+        }
+
+        /* focus 받은 상태를 나타냅니다 */
+        button:focus {
+            background-color: gold;
+        }
+
+        /* 비활성화 된 요소를 선택합니다 */
+        button:disabled {
+            background-color: black;
+        }
+
+        /* - 사용자가 이미 방문한 링크일 경우 해당 상태에 만족합니다
+           - 웹브라우저의 방문기록 정보를 사용합니다. */
+        a:visited {
+            background-color: skyblue;
+        }
+        
+        /* 타이틀 속성이 있는 요소 선택 */
+        [title] {
+            text-decoration: line-through;
+        }
+
+        /* 특정 속성값을 갖고 있는 요소 선택 */
+        [href="#"] {
+            color : green;
+        }
+
+        /*  */
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com/" target="_blank" title="새창">네이버</a>
+    <a href="#" target="_blank" title="새창">카카오</a>
+    <a href="#" target="_blank" title="새창">구글</a>
+    <button type="button" title="트리거">버튼</button>
+    <button type="button" >버튼</button>
+    <button type="button" disabled></button>
+</body>
+</html>
