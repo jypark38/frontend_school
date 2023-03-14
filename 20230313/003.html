@@ -32,7 +32,7 @@
             text-align: left;
         }
 
-        button {
+        [class^='btn'] {
             width: 88px;
             background: #343F50;
 
@@ -42,12 +42,9 @@
             border: 1px solid #1A202C;
             box-shadow: inset 1px 1px #4A5568;
             cursor:pointer;
+            color: #CBD5DF;
         }
         
-
-        .btn {
-            color: white;
-        }
         
 
         [class^="btn"]:hover,
@@ -59,6 +56,11 @@
 
         .btn:active{
             box-shadow: inset 1px 1px #262F3E;
+        }
+
+        .btn:focus {
+            outline: none;
+            border: 1px solid #439AFF;
         }
 
         [class*="yes"] {
@@ -95,16 +97,18 @@
             box-shadow: none;
             text-decoration: none;
             color: #4A5568;
+            background: #3A4556;
+            border: 1px solid #343E4E;
         }
     </style>
 </head>
 <body>
     <div class="default">
         <p>버튼</p>
-        <button class="btn">Button</button>
-        <button class="btn-yes">Yes</button>
-        <button class="btn-del">Del</button>
-        <button disabled>button</button>
+        <button class="btn" type="button">Button</button>
+        <button class="btn-yes" type="button">Yes</button>
+        <button class="btn-del" type="button">Del</button>
+        <button class="btn" type="button" disabled>button</button>
     </div>
     
     <!-- <div>
