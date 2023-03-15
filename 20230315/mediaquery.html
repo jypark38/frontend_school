@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1,p{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-size: 70px;
+        }
+        section {
+            box-shadow: inset 0 0 10px red;
+            
+            display:grid;
+        }
+        .texts, .boxes{
+            box-shadow: inset 0 0 10px green;
+            margin:0;
+            padding: 0;
+        }
+
+        .box {
+            height: 280px;
+            width: 486px;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .boxes :nth-child(1){
+            background: url(img1.svg);
+        }
+        .boxes :nth-child(2){
+            background: url(img2.svg);
+        }
+        @media (max-width:1920px){
+            section {
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2,1fr);
+            }
+
+        }
+
+        @media (max-width:768px){
+            section{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .box{
+                height: 198px;
+                width: 344px;
+            }
+            .boxes{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 0 30px auto 30px;
+            }
+            .title{
+                margin: 100px 126px 0 30px;
+            }
+            .disc{
+                margin-top: 20px;
+                margin-left: 30px;
+                margin-bottom: 60px;
+            }
+            .boxes :nth-child(1){
+                margin-right: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="texts">
+            <h1 class="title">위니브에서 <br>함께 <strong>콘텐츠 제작하실 <br>분을 모십니다.</strong></h1>
+            <p class="disc"><strong>위니브</strong>는 ICT연구 및 코딩교육 기관이며 <br> 다양한 사회 공헌 활동을 하고 있습니다.</p>
+        </div>
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+</body>
+</html>
