@@ -1,0 +1,39 @@
+.wrapper{
+    padding: 41px 28px 31px 28px;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 37px;
+}
+
+.tab{
+    margin: 28px auto;
+}
+
+.item-list{
+    padding:26px 27px;
+
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 23px 24px;
+}
+
+.item {
+    padding: 19px 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.item-title{
+    font-size: 16px;
+}
+
+.item-poster{
+    width: 180px;
+    height: 250px;
+}
+
+.item a div{
+    box-shadow: inset 0 0 10px black;
+    width: 110px;
+}

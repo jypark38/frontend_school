@@ -1,0 +1,33 @@
+.wrapper{
+    box-shadow: inset 0 0 10px red;
+    width: 1060px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1,ul,h2,p{
+    margin:0;
+    padding: 0;
+}
+li{
+    display: inline;
+    margin-right: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.tab {
+    box-shadow: inset 0 0 10px blue;
+}
+
+.item-list{
+    box-shadow: inset 0 0 10px green;
+    width: 1003px;
+    margin: 0 auto;
+}
+.item{
+    box-shadow: inset 0 0 10px yellow;
+    width: 220px;
+}
