@@ -12,6 +12,7 @@ h1{
 }
 
 .item-list{
+    margin: 0 auto;
     padding:26px 27px;
 
     display:grid;
@@ -20,6 +21,7 @@ h1{
 }
 
 .item {
+    margin: 0 auto;
     padding: 19px 20px 0 20px;
     box-sizing: border-box;
 }
