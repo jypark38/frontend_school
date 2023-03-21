@@ -87,11 +87,11 @@ h1{
     display: flex;
     font-size: 13px;
     margin-bottom: 5px;
+    overflow: hidden;
 }
 
 .item-disc li :first-child{
     color: #828282;
-    margin-right: 5px;
     flex-shrink: 0;
 }
 
@@ -100,13 +100,9 @@ h1{
 }
 .score{
     grid-area: s;
-
-    margin-left: -30px;
 }
 
 .actor :last-child{
-    flex-basis: 160px;
-    flex-grow: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

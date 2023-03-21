@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom form</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <input type="checkbox" id="chk0">
+    <label for="chk0">체크박스1</label>
+
+    <input class="custom-input" type="checkbox" id="chk1">
+    <label for="chk1">체크박스1</label>
+
+    <input class="custom-input2" type="checkbox" id="chk2">
+    <label for="chk2">체크박스2</label>
+
+    <!-- name을 같게 하면 여러 요소중에 하나를 선택하도록 바뀐다 -->
+    <input  class="custom-radio" type="radio" name="radio" id="radio1">
+    <label for="radio1">라디오1</label>
+    <input type="radio" name="radio" id="radio2">
+    <label for="radio2">라디오2</label>
+    
+    <select class="custom-select1" name="" id="">
+        <option value="">최대 프로그래밍 언어</option>
+        <option value="">Python</option>
+        <option value="">Java</option>
+        <option value="">JavaScript</option>
+        <option value="">C#</option>
+        <option value="">C/C++</option>
+    </select>
+
+    <div class="custom-select">
+        <button class="btn-select" type="button">최애 프로그래밍 언어</button>
+        <ul>
+            <li><button type="button">Python</button></li>
+            <li><button type="button">Java</button></li>
+            <li><button type="button">JavaScript</button></li>
+            <li><button type="button">C#</button></li>
+            <li><button type="button">C/C++</button></li>
+        </ul>
+    </div>
+</body>
+</html>
