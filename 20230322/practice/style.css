@@ -1,0 +1,194 @@
+body{
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+h1, h2, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+img{
+    vertical-align: top;
+}
+
+button{
+    border: 0;
+    background: none;
+}
+
+.wrapper{
+    width: 520px;
+    margin: 0 auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #C4C4C4; 
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 22px 188px 18px;
+}
+
+.close{
+    position: absolute;
+    left: 480px;
+    top: 22px;
+}
+
+section{
+    margin : 26px 24px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+#id, #pw {
+    box-sizing: border-box;
+    padding: 15px 0 15px 16px;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+#id {
+    margin-bottom: 10px;
+}
+
+/* check */
+
+.check {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.check label{
+    font-weight: 500;
+    font-size: 16px;
+    color: #767676;
+}
+
+
+.check input{
+    width: 22px;
+    height: 22px;
+    appearance: none;
+    margin: 0 0 3px 0;
+    vertical-align: middle;
+    background: url(./img/check-box.png) no-repeat center / 90%;
+}
+
+.check input:active{
+    background-image: url(./img/checked.svg);
+}
+
+/* 로그인 버튼 */
+
+.login-btn {
+    margin-bottom: 20px;
+    background: #2F80ED;
+    border-radius: 5px;
+    padding : 14px 211px;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* sub btn */
+
+.sub {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color : #767676;
+}
+
+.sub span{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.sub button{
+    font-size: inherit;
+    color: currentColor;
+}
+
+/* 또는 */
+
+.or {
+    display: flex;
+    align-items: center;
+
+    margin-top: 31px;
+    margin-bottom: 19px;
+}
+.or .text{
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 13px;
+    color: #767676;
+}
+.or .hr{
+    width: 100%;
+    border-top: 1px solid #C4C4C4;
+    margin-bottom: 2px;
+}
+
+/* domain */
+
+.domain{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.domain button{
+    padding: 15px 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #767676;
+
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.google{
+    background-image: url(img/Google__G__Logo\ 1.png);
+    border: 1px solid #767676;
+}
+.facebook{
+    background-image: url(img/facebook.png);
+    border:  1px solid #2D9CDB;
+}
+.naver{
+    background-image: url(img/naver-logo.png);
+    border: 1px solid #00BF18;
+}
+.kakao{
+    background-image: url(img/message-circle.png);
+    border: 1px solid #F2C94C;
+}

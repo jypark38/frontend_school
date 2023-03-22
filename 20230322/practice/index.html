@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>로그인 또는 회원가입</h1>
+            <button type="button" class="close"><img src="img/close.png" alt="닫기"></button>
+        </header>
+    
+        <main>
+            <section>
+                <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+    
+                <input id="id" type="text" placeholder="아이디">
+                <label class="a11y-hidden"  for="id">아이디</label>
+                <input id = "pw" type="password" placeholder="비밀번호">
+                <label class="a11y-hidden"  for="pw">비밀번호</label>
+    
+                <div class="check">
+                    <input type="radio" id="maintain-check"
+                    name="check-box">
+                    <label for="maintain-check">로그인 상태 유지</label>
+                </div >
+
+                <button class="login-btn" type="button">로그인</button>
+    
+                <div class="sub">
+                    <button>회원가입</button>
+                    <span>|</span>
+                    <button>아이디/비밀번호 찾기</button>
+                </div >
+
+                <div class="or">
+                    <span class="hr"></span><span class="text">또는</span><span class="hr"></span>
+                </div>
+    
+                <div class="domain">
+                    <button class="google">
+                        <span>구글 계정으로 로그인</span></button>
+                    <button class="facebook"><span>페이스북 계정으로 로그인</span></button>
+                    <button class="naver"><span>네이버 계정으로 로그인</span></button>
+                    <button class="kakao"><span>카카오톡 계정으로 로그인</span></button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

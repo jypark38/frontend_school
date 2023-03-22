@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    /* input 체크박스 숨기기 위한 코드. 네버에서 가져옴 */
+    .txt-hide {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+    }
+
+    .labl-hold {
+      position: relative;
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    /* 체크박스 만들기 */
+    .labl-hold::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      vertical-align: -5px;
+      border: 1px solid black;
+      /* 중요한 속성 상단으로 */
+    }
+
+    /* 접근성 - 탭을 위해 */
+    /* visivle : 클릭할 때 아웃라인 안 나타나게. 키보드 입력이 일어났을 때만.*/
+    .inp-hold:focus-visible+.labl-hold::before {
+      /* border: 1px solid black; 쓰면 레이아웃 틀어짐 */
+      outline: 2px solid black;
+      outline-offset: 5px;
+    }
+
+    /* 체크 만들기 */
+    .labl-hold::after {
+      position: absolute;
+      top: 2px;
+      left: 22px;
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: url(images/checkbox.png);
+      
+      /* 왜 안 보이냐? 이미지 커서 */
+      background-size: 22px;
+      /* 왜 부스러기 보이냐? repeat이라서 */
+      background-repeat: no-repeat;
+      /* 되도록 축약 사용 ㄱ */
+
+      background: url(images/checkmark.png) 0 0/22px no-repeat;
+
+      transition: .3s ease;
+      opacity: 0;
+    }
+
+    /* 체크될 때만 나타나게 */
+    .inp-hold:checked+.labl-hold::after {
+      left: 1px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- input 숨기고 labl로 체크박스 만들거임 -->
+  <input type="checkbox" id="inpHold" class="inp-hold txt-hide">
+  <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+  <!-- 네이밍 방법론 -->
+  <!-- 강사님 규칙 : 형태-의미-상태 -->
+  <!-- 본인 규칙대로 하면 됨. but 회사가면 컨벤션 있음 -->
+</body>
+</html>
