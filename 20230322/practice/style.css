@@ -71,6 +71,8 @@ h2 {
     width: 100%;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
 }
 #id {
     margin-bottom: 10px;
@@ -114,6 +116,17 @@ h2 {
     font-weight: 700;
     font-size: 18px;
     color: #FFFFFF;
+
+    opacity: 0.9;
+}
+
+.login-btn:hover{
+    box-shadow: 0 0 2px #767676;
+    opacity: 1;
+}
+
+.login-btn:active{
+    box-shadow: none;
 }
 
 /* sub btn */
@@ -133,6 +146,14 @@ h2 {
 .sub button{
     font-size: inherit;
     color: currentColor;
+}
+
+.sub button:hover{
+    color: black;
+}
+
+.sub button:active {
+    color: #767676;
 }
 
 /* 또는 */
@@ -191,4 +212,12 @@ h2 {
 .kakao{
     background-image: url(img/message-circle.png);
     border: 1px solid #F2C94C;
+}
+
+.domain button:hover{
+    color: black;
+}
+
+.domain button:active{
+    color: #767676;
 }
