@@ -52,7 +52,6 @@ button{
 header {
     padding: 22px 0 18px;
     text-align: center;
-
     border-bottom: 1px solid #C4C4C4;
 }
 
@@ -224,7 +223,7 @@ h2 {
 }
 .facebook{
     background-image: url(img/facebook.png);
-    border:  1px solid #2D9CDB;
+    border: 1px solid #2D9CDB;
 }
 .naver{
     background-image: url(img/naver-logo.png);
