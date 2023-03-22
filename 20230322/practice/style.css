@@ -45,6 +45,7 @@ button{
     margin: 0 auto;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
+    position: relative;
 }
 
 /* header */
@@ -62,8 +63,10 @@ h1 {
 
 .close{
     position: absolute;
-    right: 120px;
-    top: 30px;
+    right: 18px;
+    top: 18px;
+    width: 30px;
+    height: 30px;
 }
 
 main{
