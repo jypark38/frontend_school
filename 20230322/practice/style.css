@@ -9,6 +9,12 @@ body{
     font-family: 'Spoqa Han Sans Neo';
 }
 
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 h1, h2, input, button {
     margin: 0;
     padding: 0;
@@ -44,26 +50,28 @@ button{
 /* header */
 
 header {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-bottom: 1px solid #C4C4C4; 
+    padding: 22px 0 18px;
+    text-align: center;
+
+    border-bottom: 1px solid #C4C4C4;
 }
 
 h1 {
     font-size: 16px;
     font-weight: 500;
-    margin: 22px 188px 18px;
 }
 
 .close{
     position: absolute;
-    left: 480px;
-    top: 22px;
+    right: 120px;
+    top: 30px;
+}
+
+main{
+    padding : 26px 24px 25px;
 }
 
 section{
-    margin : 26px 24px 25px;
     display: flex;
     flex-direction: column;
 }
@@ -109,12 +117,11 @@ h2 {
     width: 22px;
     height: 22px;
     appearance: none;
-    margin: 0 0 3px 0;
     vertical-align: middle;
     background: url(./img/check-box.png) no-repeat center / 90%;
 }
 
-.check input:active{
+.check input:checked{
     background-image: url(./img/checked.svg);
 }
 
@@ -200,6 +207,7 @@ h2 {
 }
 
 .domain button{
+    width: 100%;
     padding: 15px 0;
     border-radius: 5px;
     font-weight: 500;
