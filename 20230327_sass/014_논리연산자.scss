@@ -1,0 +1,36 @@
+@debug not true;
+@debug not false;
+// or 더하기
+// and 곱
+
+// 두 조건이 모두 충족되는 경우
+@debug true and false; 
+
+$value: 32px;
+$color : black;
+
+p {
+    @if ($value >=32px and $color==red) {
+        letter-spacing: 1rem;
+    }
+
+    @else {
+        letter-spacing: 0.5rem;
+    }
+}
+
+// 둘 중 하나라도 true라면 true
+// 어떤 조건이든 하나라도 충족하는 경우
+
+$value2: 32px;
+$color2 : red;
+
+.one {
+    @if ($value2 >=32px or $color2 ==black) {
+        letter-spacing: 1rem;
+    }
+
+    @else {
+        letter-spacing: 0.5rem;
+    }
+}

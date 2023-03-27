@@ -1,0 +1,28 @@
+@mixin flex-align($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin item($w, $h, $r){
+    width: $w;
+    height: $h;
+    border-radius: $r;
+}
+
+.card{
+    @include flex-align(center, center);
+}
+
+.card-item{
+    @include item(100px, 100px, 10%);
+}
+
+.product{
+    @include flex-align(right, right);
+}
+
+.product-item{
+    @include item(200px, 200px, 20%);
+}
+
