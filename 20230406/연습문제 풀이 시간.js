@@ -1,9 +1,9 @@
 // 1
 const q1 = [10,20,30,10,20,30,40,10]
 
-const avg = q1.reduce((acc,cur)=>acc+cur,0) / q1.length
+const avg = q1.reduce((acc,cur)=> acc + cur, 0) / q1.length
 
-const avg2 = q1.reduce((acc,cur)=>acc+cur**2,0) / q1.length;
+const avg2 = q1.reduce((acc,cur)=> acc + cur**2, 0) / q1.length;
 
 const variance = avg2 - avg**2
 
@@ -15,7 +15,7 @@ console.log(variance)
 const q2 = '5,4,10,2,5'
 
 const avg_2 = q2.split(',')
-            .reduce( (acc,cur) => acc+parseInt(cur),0 ) / q2.split(',').length;
+            .reduce( (acc,cur) => acc+parseInt(cur), 0) / q2.split(',').length;
 
 console.log(avg_2);
 
@@ -24,9 +24,9 @@ console.log(avg_2);
 
 const q3 = [11, 22, 33, 111, 2]
 
-const answer = q3.map(i=>(i+'').split(''))
+const answer = q3.map(i => (i+'').split(''))
                 .flat(Infinity)
-                .reduce((acc,cur)=>acc+parseInt(cur),0)
+                .reduce((acc,cur)=>acc+parseInt(cur), 0)
 
 console.log(answer)
 
@@ -36,7 +36,7 @@ console.log(answer)
 const q4 = '10000'
 let answer4_1 = ''
 
-for (let i = q4.length-1 ; i >= 0; i--) {
+for (let i = q4.length-1; i >= 0; i--) {
     
     answer4_1 = q4[i] + answer4_1;
 

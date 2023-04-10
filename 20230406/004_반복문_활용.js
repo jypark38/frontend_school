@@ -50,5 +50,3 @@ for (let i = 0; i < s.length-1; i++){
 for (let i = 1; i < s.length; i++){
     console.log(s[i-1], s[i])
 }
-
-

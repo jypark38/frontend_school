@@ -14,5 +14,4 @@ if (score > 90){
     money = 0;
 }
 
-
 console.log(0);
