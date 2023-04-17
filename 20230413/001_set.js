@@ -19,25 +19,16 @@ for (const i of 게시자) {
 for (const i of 게시자) {
     console.log(i, 회사게시판.filter(e => e === i).length)
 }
+// 이호준 7
+// 김연하 2
+// 최흥석 1
+// 이나영 1
 
 // 이 풀이는 매우 어렵습니다. 초급자 분들에게 권장하지 않습니다.
 let map = new Map()
 for (const i of 회사게시판) {
     map.set(i, (map.get(i) || 0) + 1)
 }
-
-// 1번째 순회 i에 '이호준'
-map.set(i, (map.get(i) || 0) + 1)
-
-let map = new Map()
-map.get('이호준') // undefined
-
-map.set('이호준', 1) // 최종
-
-// 2번째 순회 i에 '이호준'
-map.set(i, (map.get(i) || 0) + 1)
-
-map.set('이호준', 2) // 최종
 
 
 /// set 연습 /// 

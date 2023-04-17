@@ -36,7 +36,6 @@ let myObj = {
 let test = myObj.func1;
 test()
 
-
 ////////////////////
 
 // this가 어려운 이유는 this를 포함하고 있는 객체가 있는 위치에 따라 this의 의미가 달라지기 때문입니다.
@@ -100,8 +99,9 @@ let bruce = {
     say: sayName
 }
 
-peter.say()
-bruce.say()
+peter.say() // Peter Parker
+bruce.say() // Bruce Wayne
+sayName() // hojun
 
 ////
 
@@ -109,8 +109,8 @@ function attackBeam() { // 레이저 공격
     this.hp -= 20
 }
 
-let jombi = {
-    name: 'jombi',
+let jombie = {
+    name: 'jombie',
     damaged: attackBeam,
     hp: 10000,
     power: 2
@@ -123,8 +123,9 @@ let thanos = {
     power: 100
 }
 
-jombi.damaged()
-jombi
+jombie.damaged()
+jombie
+// hp : 9980
 
 /////
 
@@ -136,8 +137,8 @@ function attackKnife() { // 칼공격
     this.hp -= 5
 }
 
-let jombi = {
-    name: 'jombi',
+let jombie = {
+    name: 'jombie',
     damaged1: attackBeam,
     damaged2: attackKnife,
     hp: 10000,
@@ -151,9 +152,10 @@ let thanos = {
     power: 100
 }
 
-jombi.damaged1() // Beam
-jombi.damaged2() // Knife
-jombi.hp
+jombie.damaged1() // Beam
+jombie.damaged2() // Knife
+jombie.hp
+// 9975
 
 /////
 
@@ -167,8 +169,8 @@ function attackKnife() { // 칼공격
     console.log(this)
 }
 
-let jombi = {
-    name: 'jombi',
+let jombie = {
+    name: 'jombie',
     damaged: [attackBeam, attackKnife],
     hp: 10000,
     power: 2
@@ -181,9 +183,9 @@ let thanos = {
     power: 100
 }
 
-jombi.damaged[0]() // Beam
-jombi.damaged[1]() // Knife
-// jombi.hp
+jombie.damaged[0]() // Beam
+jombie.damaged[1]() // Knife
+
 
 ///////
 
