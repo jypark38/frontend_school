@@ -91,14 +91,13 @@ const dayNames = [
     '(토요일)'
 ];
 // getDay 메서드는 해당 요일(0 ~ 6)을 나타내는 정수를 반환한다.
-const day = dayNames[today.getDay()];
-
-const year = today.getFullYear();
-const month = today.getMonth() + 1;
-const date = today.getDate();
-let hour = today.getHours();
-let minute = today.getMinutes();
-let second = today.getSeconds();
+const day = dayNames[today.getDay()]; // 요일 인덱스
+const year = today.getFullYear();  // 년
+const month = today.getMonth() + 1;  // 월 인덱스
+const date = today.getDate(); // 일
+let hour = today.getHours();  //시간
+let minute = today.getMinutes(); // 분 
+let second = today.getSeconds();  // 초
 const ampm = hour >= 12 ? 'PM' : 'AM';
 
 // 날짜의 차를 구하는 코드
@@ -107,6 +106,7 @@ function getDateDiff(d1, d2) {
     const date1 = new Date(d1);
     const date2 = new Date(d2);
     const diffDate = date1.getTime() - date2.getTime();
+    // getTime
     // 일 == 밀리세컨 * 초 * 분 * 시
     return Math.abs(diffDate / (1000 * 60 * 60 * 24));
 }
