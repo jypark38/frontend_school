@@ -2,20 +2,25 @@
 
 
 'paullab CEO leehojun hello CEO'
+
 // 문자열 1개만 매칭되어 변경
 'paullab CEO leehojun hello CEO'.replace('CEO', 'CTO')
+
 // flag로 global을 주어서 전체 변경(m-다중라인, i-대소문자구분X)
 'paullab CEO leehojun hello CEO'.replace(/CEO/g, 'CTO')
+
 // 패턴을 찾아 Array로 반환
 'paullab CEO leehojun hello CEO'.match(/CEO/g)
+
 // 패턴으로 Split
 'paullab CEO leehojun hello CEO'.split(/CEO/g)
+
 // 패턴이 들어가 있으면 true 없으면 false
 (/CEO/g).test('paullab CEO leehojun hello CEO')
 
 // 알고리즘 문제 풀이할 때 주의 사항
 // split을 하면 내가 원하는 갯수보다 1개가 더 추가되어 나온다
-'!a!abc!abcd'.split('!')
+'!a!abc!abcd'.split('!') //['', 'a', 'abc', 'abcd', '']
 '!!!'.split('!') // 4개
 '!a!a!a'.split('!') // 4개
 'a!a!a!'.split('!') // 4개
