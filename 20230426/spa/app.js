@@ -67,7 +67,7 @@ async function newsDetail() {
 
     container.innerHTML = `
         <h1>${newsContent.title}</h1>
-        <div><a>목록으로 돌아가기</a></div>
+        <div><a href="#/page/${store.currentPage}">목록으로 돌아가기</a></div>
     `;
 }
 
@@ -77,6 +77,9 @@ function router() {
     const routePath = location.hash;
 
     if (routePath === '') {
+        newsFeed();
+    } else if (routePath.includes('#/page/')) {
+        store.currentPage = parseInt(routePath.substring(7));
         newsFeed();
     } else {
         newsDetail();
