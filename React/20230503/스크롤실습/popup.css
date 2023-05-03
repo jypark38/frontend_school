@@ -56,11 +56,9 @@ ul{
     display: none;
 }
 .popup.active,
-.popup.active + .dim{
+.popup.active + section + .dim{
     display: block;
 }
-
-
 
 .menu li{
     border-bottom: 1px solid #fff;
