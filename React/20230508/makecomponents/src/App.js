@@ -16,9 +16,6 @@ function HelloProps(props) {
   )
 }
 
-
-
-
 function App() {
   return (
     <div>

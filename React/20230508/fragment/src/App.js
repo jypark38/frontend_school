@@ -1,4 +1,4 @@
-
+// 컴퍼넌트마다 요소를 감싸지 않고 렌더링 시키는 방법?
 import React, { Fragment } from 'react';
 import './FragmentTest.css'
 
@@ -70,9 +70,7 @@ function ItemList() {
 
 function App() {
   return (
-
     <ItemList />
-
   );
 }
 export default App;
