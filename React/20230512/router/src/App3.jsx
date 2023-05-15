@@ -1,0 +1,69 @@
+import { BrowserRouter, Routes, Route, Link, useLocation, useParams, Outlet } from "react-router-dom";
+
+function App() {
+    return (
+        <BrowserRouter>
+            <Link to="/"> home </Link>
+            <Link to="/one"> <br />one </Link>
+            <Link to="/two"> two </Link>
+            <Link to="/three"> three </Link>
+            <Link to="/blog/1"> <br />four_1 </Link>
+            <Link to="/blog/1/notice"> <strong>notice</strong> </Link>
+
+            <Link to="/blog/2"> four_2 </Link>
+            <Link to="/blog/2/notice"> notice </Link>
+            
+            <Link to="/blog/3"> four_3 </Link>
+            <Link to="/blog/3/notice"> notice </Link>
+            {/* 라우트를 감싸줍니다. */}
+            <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/one" element={<One name='licat' />} />
+                <Route path="/two" element={<Two />} />
+                <Route path="/three" element={<Three />} />
+                <Route path="/blog/:id/*" element={<Outlet/>} >
+                    <Route path="" element={<Blog />} />
+                    <Route path="notice" element={<Notice />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+function Index() {
+    return <h1>hello world0</h1>
+}
+
+function One({ name }) {
+    return <h1>{name} world1</h1>
+}
+
+function Two() {
+    return <h1>hello world2</h1>
+}
+
+function Three() {
+    return <h1>hello world3</h1>
+}
+
+function Blog() {
+    const location = useLocation();
+    console.log("!",location)
+    const path = location.pathname.split('/')[2];
+    console.log(path);
+    const param = useParams();
+    console.log(param);
+    return <h1>hello Blog this is blog page {path}</h1>
+}
+
+function Notice() {
+    const location = useLocation();
+    console.log("!",location)
+    const path = location.pathname.split('/')[2];
+    console.log(path);
+    const param = useParams();
+    console.log(param);
+    return <h1>Notice{path}</h1>
+}
+
+export default App;
