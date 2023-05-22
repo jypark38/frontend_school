@@ -40,7 +40,6 @@
 
 
 import { createContext } from "react"
-import { useRef } from 'react';
 
 const UserInfo = createContext({ name: "gary", id: "garyIsFree" });
 
