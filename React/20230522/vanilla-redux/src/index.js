@@ -31,11 +31,11 @@ const substractNumber = () => {
 const countReducer= (state=0, action) => {
   switch (action.type) {
     case 'ADD':
+      minus.disabled = false;
       return state + 1;
-
     case 'SUBSTRACT':
+      plus.disabled = false;
       return state - 1;
-    
     default:
       return state;
   }
@@ -46,16 +46,18 @@ const countReducer= (state=0, action) => {
 const store = createStore(countReducer);
 
 
-let count = 0;
+// let count = 0;
 
 
 // // 자바스크립트
 // // UI Update - text
-// const updateResult = (c) => {
-//     number.innerText = c;
-//     quantity.innerHTML = c;
-//     totalPrice.innerHTML = c * PRICE;
-// };
+const handleWrite = () => {
+    number.innerText = store.getState();
+    quantity.innerHTML = store.getState();
+    totalPrice.innerHTML = store.getState() * PRICE;
+};
+
+store.subscribe(handleWrite)
 
 // // State Change
 // const addNumber = () => {
@@ -76,6 +78,6 @@ let count = 0;
 // updateResult(count);
 
 
-// // Event
-// plus.addEventListener("click", addNumber);
-// minus.addEventListener("click", substractNumber);
+// Event
+plus.addEventListener("click", addNumber);
+minus.addEventListener("click", substractNumber);
